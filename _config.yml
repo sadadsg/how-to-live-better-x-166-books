@@ -1,5 +1,4 @@
 ---
 theme: jekyll-theme-cayman
 markdown: kramdown
-permalink: pretty
 exclude: [tools, data/fragments, .source]

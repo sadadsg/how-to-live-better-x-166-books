@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # 署名与来源说明（ATTRIBUTION）
 
 本项目遵循 CC BY 4.0，对所引用的三个来源说明如下。

@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Top15 集群视角 · #4 选择架构 / 环境设计 / 制度工程
 
 > 聚合视角页：从拆书库 Top15 共识框架反看 HowToLiveBetter。当前覆盖样章 4 节，Phase 3 后扩展全量。

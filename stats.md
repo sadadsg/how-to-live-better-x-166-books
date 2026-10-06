@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # 统计（stats）
 
 > 状态：**全量完成**——34 节全覆盖（指南 667 条全部过检）。数字由 `tools/verify_guides.py` 生成，可复现。

@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Top15 集群视角 · #2 复利 / 长期主义
 
 > 聚合视角页：从拆书库 Top15 共识框架反看 HowToLiveBetter。当前覆盖全量 34 节。
