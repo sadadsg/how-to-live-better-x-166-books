@@ -36,11 +36,13 @@
 
 ```markdown
 ### ✅ 4.3 只看未来投入和回报 ↔ 《错误的行为》沉没成本
-- 指南条目：第 4 节第 3 条（证据等级 B）｜[原文](https://github.com/eternity4719/HowToLiveBetter/blob/main/book/04-不要浪费时间.md)
+- 指南条目：第 4 节第 3 条「决定是否继续时，只看未来投入和未来回报，不看已投入多少」（证据等级 B）｜[原文](https://github.com/eternity4719/HowToLiveBetter/blob/main/book/04-不要浪费时间.md)
 - 对应框架：《错误的行为》沉没成本效应；《思考，快与慢》前景理论
-- 调研佐证：（有则引用报告+论文，无则省略）
+- 调研佐证：《决策科学方法论》——「沉没成本谬误真实存在」（verdict: 部分支持）｜文献：决策科学方法论——Slee et al. 2018；Ronayne et al. 2021（[出处](https://doi.org/10.1257/aer.20190701)）
 - 一致点：……；差异边界：……
 ```
+
+「调研佐证」行一律附带论文出处（作者+年份+DOI/链接），取自 `data/research-verdicts.yaml` 的 sources/url 字段，可逐条溯源；底表中该命题无文献的如实标注「无链接」。
 
 ## 目录
 
