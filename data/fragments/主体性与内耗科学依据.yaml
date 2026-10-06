@@ -1,0 +1,58 @@
+- theme: "主体性与内耗科学依据"
+  category: "6_个人成长方法论/6.3_情绪压力与韧性"
+  report_file: "主体性与内耗科学依据调研报告.md"
+  claims:
+    - claim: "对他人要求越少、动机越自主（内部控制点）的人主体性越强；但'少要求他人'不等于断绝关系，归属感仍是基本心理需要"
+      verdict: "支持"
+      original: "✅（边界：SDT归属感同样必要，非断绝关系）"
+      evidence: "Ryan & Deci 2017 SDT综述：整合性调节与幸福感r≈0.40-0.60、外部调节r≈-0.20至-0.40；Levenson 1973'有力他人'控制点量表直接测'绑定他人'程度；内部LOC预测幸福感r≈0.30、外部LOC预测抑郁r≈0.25"
+      sources: ["Ryan & Deci 2017, Annual Review of Psychology", "Levenson 1973", "Rotter 1966", "Cheng 2013 (meta)"]
+      url: "https://selfdeterminationtheory.org/theory/"
+    - claim: "将喜怒哀乐绑定在不可控的他人身上会陷入沉溺型反刍（brooding），导致情绪不稳定与内耗"
+      verdict: "支持"
+      original: "✅ 完全核证"
+      evidence: "Nolen-Hoeksema反刍理论：反刍与抑郁r≈0.40；Watkins 2008（Psychological Bulletin）：brooding（而非反思型）预测抑郁且因果方向明确；情绪依赖与依恋焦虑r≈0.40（Bornstein）"
+      sources: ["Nolen-Hoeksema 1991/2000", "Watkins 2008, Psychological Bulletin", "Gross 2015", "Bornstein 1992（EDS）"]
+      url: ""
+    - claim: "把注意力转向自身、构建安全感与价值感是有效的，但必须是'主动非评判'型自我关注，反刍式自我关注反而有害"
+      verdict: "支持"
+      original: "✅（边界：须为adaptive自我关注，Ingram 1990）"
+      evidence: "Neff：自我关怀与幸福感r≈0.50-0.55、与焦虑抑郁r≈-0.50；Crocker 2002（JPSP）：基于他人评价的条件自尊与抑郁正相关；Ingram 1990：自我关注分adaptive与maladaptive两型"
+      sources: ["Neff 2003a/2011", "Crocker & Park 2004", "Ingram 1990"]
+      url: "https://self-compassion.org/what-is-self-compassion/"
+    - claim: "不对伴侣过度期待、解绑'关系条件自尊'（RCSE）能提高关系满意度；注意这是安全依恋，不是回避型的情感隔离"
+      verdict: "支持"
+      original: "✅ 完全核证（边界：非回避型表面低期待）"
+      evidence: "Knee 2008（JPSP）：RCSE与关系满意度r≈-0.30、与焦虑依恋r≈0.40；Candel & Turliuc 2019元分析：不安全依恋×满意度r≈-0.40至-0.50；Laurenceau 2005：期望-实现差距预测满意度"
+      sources: ["Knee 2008, JPSP", "Candel & Turliuc 2019 (meta)", "Laurenceau 2005", "Mikulincer & Shaver 2016"]
+      url: "https://psycnet.apa.org/record/2008-13794-005"
+    - claim: "将高标准转向自身（自我导向完美主义）比要求他人更健康，但极端自我导向会转为自我贬低，需配合自我关怀"
+      verdict: "部分支持"
+      original: "✅（边界：需Self-Compassion配合）"
+      evidence: "Frost 1990/Hewitt & Flett 1991三维完美主义：自我导向→高表现低焦虑（d≈0.20-0.40），他人导向/社会规定→焦虑与关系满意度下降；Curran 2018元分析：年轻人完美主义显著上升"
+      sources: ["Frost 1990", "Hewitt & Flett 1991", "Curran & Hill 2018 (meta)"]
+      url: ""
+    - claim: "停止向外界索取、构建独立且稳定的自我有坚实实证基础（自我概念清晰度+SDT整合调节+自我关怀）"
+      verdict: "支持"
+      original: "✅（SDT/自我概念清晰度/自我关怀部分）"
+      evidence: "Light 2019元分析：自我概念清晰度与心理健康r≈0.45；Wu 2023：与幸福感r≈0.40；SDT三需要满足与幸福感r=0.40-0.60，SDT干预元分析效应量d≈0.40"
+      sources: ["Campbell 1990", "Light 2019 (meta)", "Wu 2023 (meta)", "Ryan & Deci 2017"]
+      url: "https://pubmed.ncbi.nlm.nih.gov/2231284/"
+    - claim: "荣格'个体化'理论为'独立稳定自我'提供了合用的概念框架（实证级别）"
+      verdict: "部分支持"
+      original: "⭐⭐⭐⭐ 方向契合（临床框架非RCT实证）"
+      evidence: "Jung 1921个体化=整合意识与无意识、目标是更真实的关系而非孤立；属临床心理学框架，缺乏RCT实证（报告自评降级为⭐⭐⭐⭐）"
+      sources: ["Jung 1921, Psychological Types"]
+      url: ""
+    - claim: "认知重评（换角度解读情绪事件）与幸福感正相关、表达抑制与幸福感负相关，可用于替代反刍"
+      verdict: "支持"
+      original: "✅ 核证"
+      evidence: "Gross 2015情绪调节过程模型（五大策略）；Hu 2014元分析：重评与主观幸福感r≈0.30，表达抑制与幸福感负相关"
+      sources: ["Gross 2015, Annual Review of Clinical Psychology", "Hu 2014 (meta)"]
+      url: ""
+    - claim: "亲密关系中承诺由满意度、投资与替代选项共同决定，承诺对分手有极强预测力（流传的'137项研究N≈38,000'系错误数据，实为52项研究N=11,582）"
+      verdict: "支持"
+      original: "✅（含数据修正：52项研究/60个独立样本/N=11,582）"
+      evidence: "Le & Agnew 2003元分析：52项研究、60个独立样本、N=11,582；承诺预测分手d=-0.832（极强）；满意度+投资+替代共同解释承诺变异近65%"
+      sources: ["Le & Agnew 2003, Personality and Social Psychology Review"]
+      url: "https://doi.org/10.1177/1088868303253781"

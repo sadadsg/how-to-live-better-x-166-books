@@ -1,0 +1,58 @@
+- theme: "深度工作实操路径"
+  category: "6_个人成长方法论/6.2_学习与深度工作"
+  report_file: "深度工作实操路径调研报告.md"
+  claims:
+    - claim: "任务切换会留下'注意力残留'，显著降低下一个任务的表现"
+      verdict: "支持"
+      original: "✅（Leroy 实验证明）"
+      evidence: "Sophie Leroy 实验：切换后部分注意力'卡在'前一任务上，错误率上升、最优决策率下降；其 Ready-to-Resume 记录技巧可显著降低切换损失"
+      sources: ["Sophie Leroy 注意力残留研究", "Cal Newport《Deep Work》2016"]
+      url: ""
+    - claim: "工作中断后平均需约 23 分钟（23 分 15 秒）才能恢复，且中断内容是否相关不影响代价"
+      verdict: "支持"
+      original: "✅（Gloria Mark 量化）"
+      evidence: "Gloria Mark 观察研究：中断后恢复需 23 分 15 秒，办公室工作者单次任务平均仅 3 分 5 秒；中断后压力评级 6.92→9.46（20 分量表）"
+      sources: ["Gloria Mark《Attention Span》2023"]
+      url: ""
+    - claim: "多任务处理效率更高"
+      verdict: "证伪"
+      original: "❌ 常见误区"
+      evidence: "每次任务切换都产生认知税与注意力残留；知识工作者约 60% 时间耗在浅层工作，频繁切换是主因"
+      sources: ["Cal Newport《Deep Work》", "Gloria Mark 2023"]
+      url: ""
+    - claim: "'看一眼通知/被打断一下没关系'"
+      verdict: "证伪"
+      original: "❌ 常见误区"
+      evidence: "Gloria Mark：任何打断都触发切换代价与注意力残留，中断内容是否与工作相关不改变代价"
+      sources: ["Gloria Mark《Attention Span》2023"]
+      url: ""
+    - claim: "专注能力是天生的、不可训练"
+      verdict: "证伪"
+      original: "❌ 常见误区（神经科学证明可训练）"
+      evidence: "Georgia Tech 2024：专注时 FPCN 与 DMN 去同步化、约 20 秒准周期跨物种存在——专注有根本性神经基础且可被训练"
+      sources: ["Seeburger & Schumacher 2024 Georgia Tech"]
+      url: "https://psychology.gatech.edu/news/neuroscience-study-taps-brain-network-patterns-understand-deep-focus-attention"
+    - claim: "人每天能进行的高质量深度认知工作上限约 4 小时"
+      verdict: "支持"
+      original: "✅（艾力克森研究上限）"
+      evidence: "最杰出知识工作者每天真正深度工作不超过 4 小时；纽波特：40 小时时间块周的产出等于 60+ 小时无结构周"
+      sources: ["Ericsson 刻意练习研究", "Cal Newport《Deep Work》"]
+      url: ""
+    - claim: "记者模式（利用碎片时间随时切入深度状态）适合新手日常使用"
+      verdict: "部分支持"
+      original: "⚠️ 纽波特警告：不适合新手"
+      evidence: "Cal Newport 警告频繁切换会耗尽意志力，属专家经验而非对照实验；新手应从节律模式（每天固定 1-4 小时）起步"
+      sources: ["Cal Newport《Deep Work》"]
+      url: ""
+    - claim: "30 天社交媒体戒断实验能夺回注意力主动权"
+      verdict: "部分支持"
+      original: "🟡 实践框架（非对照试验）"
+      evidence: "纽波特 30 天四阶段戒断+工匠选择法为实践方案；关键教训：需提前规划替代活动，否则其他屏幕填补真空；无 RCT 验证"
+      sources: ["Cal Newport Digital Minimalism 30 天实验"]
+      url: ""
+    - claim: "知识工作者平均约 60% 的工作时间用于浅层事务"
+      verdict: "支持"
+      original: "✅（纽波特综合估计）"
+      evidence: "Cal Newport：知识工作者平均 60% 时间用于浅层工作，深度时间被会议/邮件/行政切碎"
+      sources: ["Cal Newport: Knowledge Workers are Bad at Working"]
+      url: "https://calnewport.com/knowledge-workers-are-bad-at-working-and-heres-what-to-do-about-it/"

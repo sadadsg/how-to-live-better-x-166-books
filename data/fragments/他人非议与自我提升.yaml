@@ -1,0 +1,46 @@
+- theme: "他人非议与自我提升"
+  category: "6_个人成长方法论/6.3_情绪压力与韧性"
+  report_file: "他人非议与自我提升调研报告.md"
+  claims:
+    - claim: "诋毁多源于恶意嫉妒与下行比较：上行比较催生嫉妒→幸灾乐祸→攻击的完整因果链，良性嫉妒反而驱动自我提升"
+      verdict: "支持"
+      original: "✅ 恶意嫉妒+下行比较实证"
+      evidence: "9项实验（N=1,827）：上行比较→嫉妒/幸灾乐祸；2026中学生研究（n=2,172）：幸灾乐祸在恶意嫉妒与欺凌间完全中介；职场研究（306名员工）高嫉妒者见同事受难参与攻击。"
+      sources: ["Lange & Crusius 等嫉妒-幸灾乐祸实验 (N=1,827)", "Scientific Reports 2026 (n=2,172)"]
+      url: "https://pubmed.ncbi.nlm.nih.gov/35025600/"
+    - claim: "印象一旦形成，确认偏误使记忆与信息寻求系统性偏向印证，纠正大多无效——'越解释越被动'"
+      verdict: "支持"
+      original: "✅ 确认偏误+CIE+操作性条件反射"
+      evidence: "2018年4项实验：印象形成后记忆/解释/信息寻求被系统性偏置；Nature Reviews Psychology 2022：debunking 有效性有限；持续影响效应（CIE）显示纠错后错误信息仍影响推理。"
+      sources: ["SagePub 2018 确认偏误实验", "Nature Reviews Psychology 2022"]
+      url: "https://www.nature.com/articles/s44159-021-00006-y"
+    - claim: "对恶意诋毁作出愤怒/辩解等反应会强化攻击（有反应→攻击被奖励的操作性条件反射），'不争'是认知资源保护策略"
+      verdict: "支持"
+      original: "✅ 争辩激活冲突环路、消耗认知资源"
+      evidence: "操作性条件反射机制：造谣者目标是获得反应，反应即奖励；争辩激活前额叶-杏仁核冲突环路造成认知资源消耗；'不进入对方框架'对应框架效应研究。"
+      sources: ["操作性条件反射与框架效应研究"]
+      url: ""
+    - claim: "记恨伤身：记恨想象使血压/心率升高且恢复期持续，宽恕与身体健康普遍正相关"
+      verdict: "支持"
+      original: "✅ 宽恕健康元分析+心血管实验"
+      evidence: "宽恕元分析（128项研究，N=58,531）：宽恕与身体健康 r=0.14，不受年龄/性别/教育调节；Witvliet 实验（71人）：记恨想象升血压心率且恢复慢，宽恕想象更快恢复。"
+      sources: ["宽恕与身体健康元分析 (128 studies, N=58,531)", "Witvliet et al. 心血管实验"]
+      url: "https://pubmed.ncbi.nlm.nih.gov/30669877/"
+    - claim: "不宽恕预测3年后健康下降，反刍是宽恕→健康的核心中介；但放下≠和解、强迫立即原谅是压抑"
+      verdict: "支持"
+      original: "✅ 前瞻性研究因果方向明确"
+      evidence: "前瞻性研究：不宽恕预测3年后健康下降（N=484/249研究中反刍为核心中介）；报告边界：放下≠遗忘≠给对方开脱，强迫原谅会反弹。"
+      sources: ["前瞻性不宽恕-健康研究", "MDPI 反刍中介研究 (N=484/249)"]
+      url: "https://pubmed.ncbi.nlm.nih.gov/24266673/"
+    - claim: "固定型思维者失败后倾向向下比较修复自尊，成长型思维者倾向向上比较与自我提升"
+      verdict: "支持"
+      original: "✅ 成长型思维+注意力经济"
+      evidence: "Nussbaum & Dweck 2008：失败后固定型选向下比较、成长型选向上比较；2023研究：上行比较的'认同vs对比'取向决定成长或内耗。"
+      sources: ["Nussbaum & Dweck 2008", "Springer 2023 社会比较研究"]
+      url: "https://link.springer.com/article/10.1007/s11218-023-09850-7"
+    - claim: "成长型思维干预可提升学业成就（全国随机实验），'想变强'比'现在强'更能驱动自我提升"
+      verdict: "支持"
+      original: "✅ Nature 全国实验（2019）"
+      evidence: "Yeager et al. 2019 Nature 全国随机实验：成长型思维干预提升成就；1,000名工作者研究：成长型思维与自我提升动机相关（β=0.275-0.413）强于当前能力感知。"
+      sources: ["Yeager et al. 2019 Nature", "Growth Mindsets and Self-Improvement Motivation"]
+      url: "https://www.nature.com/articles/s41586-019-1466-y"

@@ -1,0 +1,52 @@
+- theme: "AI时代个人认知升级与破局实践"
+  category: "6_个人成长方法论/6.3_情绪压力与韧性"
+  report_file: "AI时代个人认知升级与破局实践调研报告.md"
+  claims:
+    - claim: "开启第二曲线（新方向）的最佳时机是在第一曲线尚有余力、未达顶峰时，等走投无路再转型为时已晚"
+      verdict: "部分支持"
+      original: "无明确判定标记（报告以'核心洞察'与成败案例呈现）"
+      evidence: "Handy 1989第二曲线理论；案例佐证：Netflix/Intel/富士在巅峰前主动转型成功，柯达/诺基亚/百视达巅峰期拒变而衰落（企业案例非系统实证）"
+      sources: ["Handy 1989, The Age of Unreason"]
+      url: ""
+    - claim: "企业在本业巅峰期拒绝转型、固守旧业务，往往在范式跃迁中被淘汰"
+      verdict: "支持"
+      original: "报告'失败案例'栏（柯达/诺基亚/百视达）"
+      evidence: "柯达1998年已感知胶卷萎缩但不肯大力发展数码；诺基亚功能机巅峰被智能机取代（'我们没做错任何事'最危险）；百视达拒绝流媒体（历史案例）"
+      sources: ["柯达/诺基亚/百视达转型案例（报告案例栏）"]
+      url: ""
+    - claim: "共情、在场、道德判断、原创性、愿景（EPOCH五类）是AI难以替代的人类能力，此类岗位2016-2024就业正增长，互补效应约为替代效应的1.7倍"
+      verdict: "支持"
+      original: "关键数据：互补效应是替代效应的1.7倍（MIT Sloan）"
+      evidence: "MIT Sloan EPOCH框架（2025）：2016-2024年EPOCH高分岗位就业正增长，互补效应为替代效应的1.7倍"
+      sources: ["MIT Sloan EPOCH Framework 2025"]
+      url: ""
+    - claim: "AI时代个人信息管理的瓶颈已从'信息组织'转移到'捕获质量'——AI能弥补混乱结构，但无法读取你从未捕获的内容"
+      verdict: "存疑"
+      original: "无明确判定标记（报告称'最大洞察'，属实践者主张）"
+      evidence: "Tiago Forte CODE框架+Karpathy LLM Wiki范式（2026）：实践者方法论主张，报告未提供实证数据"
+      sources: ["Forte, Building a Second Brain（CODE框架）", "Karpathy 2026, LLM Wiki"]
+      url: ""
+    - claim: "每天设置约2小时'无AI时间窗'人为制造认知摩擦，可保护原创性思考（AI只生成平均值，第一遍思考才有方差）"
+      verdict: "存疑"
+      original: "无明确判定标记（Sahil Bloom'认知摩擦保持法则'，观点性）"
+      evidence: "Sahil Bloom 2026'认知摩擦作为最后护城河'：单一观点来源，报告未附实证数据"
+      sources: ["Sahil Bloom 2026, Cognitive Friction as Your Last Moat"]
+      url: ""
+    - claim: "'哲学/价值判断是AI时代个人最后的竞争力'——AI可生成多个方案，但选哪个需要意义与价值判断"
+      verdict: "存疑"
+      original: "无明确判定标记（报告论断）"
+      evidence: "周国平观点+报告论断（AI没有'意义判断'能力、无skin in the game）；方向性主张，无实证检验"
+      sources: ["周国平（观点引用）", "Sahil Bloom 2026"]
+      url: ""
+    - claim: "用控制二分法（区分可控与不可控）可化解大部分焦虑"
+      verdict: "存疑"
+      original: "无明确判定标记（报告称'实用意义'，未附数据）"
+      evidence: "爱比克泰德《手册》控制二分法；报告断言'焦虑几乎全部来自试图控制不可控之事'但未提供实证（ACT接纳疗法效应量证据见同库其他报告）"
+      sources: ["爱比克泰德, Enchiridion"]
+      url: ""
+    - claim: "用约5%的业余时间试水新方向、保持'主业+探索+学习'组合式生活，可在不辞职的前提下对冲职业非连续性风险"
+      verdict: "部分支持"
+      original: "无明确判定标记（报告行动建议，由第二曲线与路径依赖分析推出）"
+      evidence: "由Handy第二曲线+路径依赖四层锁定（沉没成本/认知负荷/风险规避/团队惯性）推导的实操建议，报告未提供独立验证数据"
+      sources: ["Handy 1989"]
+      url: ""
