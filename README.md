@@ -6,7 +6,7 @@
 
 > 状态：✅ **全量完成**——34 节全覆盖，667 条指南条目全部过检，258 条对照记录（✅123 / 🟡54 / ❌2 / 🔀79），409 条无对应条目逐条归并说明，172 行调研佐证中 162 行附论文出处（作者+年份+DOI）。
 >
-> **[打开在线检索页](https://sadadsg.github.io/how-to-live-better-x-166-books/)**——按节 / 判定档 / 证据等级 / 有无论文佐证 / 对应书筛选，零依赖单文件，也可从 Release 或仓库直接下载双击离线用。
+> **[打开在线检索页](https://sadadsg.github.io/how-to-live-better-x-166-books/)**——按节 / 判定档 / 证据等级 / 有无论文佐证 / 对应书筛选，零依赖单文件；离线版从 [Release v1.0](https://github.com/sadadsg/how-to-live-better-x-166-books/releases/latest) 下载 `life-crosswalk-offline.html`，双击即用。
 
 ## 目录
 
