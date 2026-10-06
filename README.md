@@ -2,7 +2,18 @@
 
 把 GitHub 上高星的《[高性价比人生指南](https://github.com/eternity4719/HowToLiveBetter)》（HowToLiveBetter，667 条建议、34 节、A/B/C 证据分级）与一个 166 本书的私人拆书笔记库（约 1300 个思维框架）、以及一批已用科学论文逐条核验过的调研报告做**逐条对照**：哪里观点一致，哪里有边界条件，哪里冲突，哪里互补。
 
-> 状态：🚧 样章阶段（先做第 03/04/05/06 节，验收后铺开全量 34 节）
+> 状态：🚧 样章完成（4/34 节，80 条对照记录），待作者验收后铺开全量
+
+## 已完成章节
+
+| 节 | 记录 | 四档分布 |
+| --- | --- | --- |
+| [03 不要浪费精力](guide/03-不要浪费精力.md) | 22 | ✅15 🟡4 🔀3 |
+| [04 不要浪费时间](guide/04-不要浪费时间.md) | 16 | ✅12 🟡3 🔀1 |
+| [05 不要浪费钱](guide/05-不要浪费钱.md) | 30 | ✅26 🟡1 🔀3 |
+| [06 反面清单](guide/06-反面清单.md) | 12 | ✅5 🟡4 ❌1 🔀2 |
+
+全量统计见 [stats.md](stats.md)；聚合视角页：[#13 反着想/否定法](frameworks/top13-反着想-否定法.md) · [#4 选择架构/环境设计](frameworks/top4-选择架构-环境设计.md) · [#1 认知偏误](frameworks/top1-认知偏误-可预测的非理性.md)
 
 ## 三源模型
 
@@ -33,10 +44,11 @@
 
 ## 目录
 
-- [`guide/`](guide/) — 按 HowToLiveBetter 章节的对照文档（核心内容）
-- [`frameworks/`](frameworks/) — 按拆书库 Top15 共识框架聚合的视角页
-- [`data/`](data/) — 两份结构化底表：`vault-frameworks.yaml`（166 本 × 框架）、`research-verdicts.yaml`（45 份报告 × 裁决 × 论文出处）
-- [`stats.md`](stats.md) — 四档分布与调研佐证覆盖率
+- [guide/](guide/) — 按 HowToLiveBetter 章节的对照文档（核心内容）
+- [frameworks/](frameworks/) — 按拆书库 Top15 共识框架聚合的视角页
+- [data/](data/) — 两份结构化底表：`vault-frameworks.yaml`（166 本 × 框架）、`research-verdicts.yaml`（48 份报告 × 633 条裁决 × 论文出处）
+- [stats.md](stats.md) — 四档分布与调研佐证覆盖率
+- [tools/](tools/) — 底表解析、候选抽取、引用核验脚本（全部可复现）
 
 ## 方法与边界
 
