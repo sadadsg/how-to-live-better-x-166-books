@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>人生指南 × 拆书框架 × 科学核验 · 对照检索</title>
+<style>
+:root{
+  --bg:#fafaf8; --card:#fff; --ink:#1a1a1a; --muted:#6b6b6b; --line:#e4e4e0;
+  --accent:#18794e; --accent-soft:#e8f2ec; --ok:#18794e; --part:#9a8b1f; --bad:#c0392b; --sym:#5a7d9a;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font:16px/1.65 -apple-system,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  -webkit-text-size-adjust:100%}
+.wrap{max-width:960px;margin:0 auto;padding:20px 16px 60px}
+header{padding:8px 0 4px}
+header h1{font-size:22px;margin:0 0 6px}
+header h1 a{color:inherit;text-decoration:none}
+header p{margin:0;color:var(--muted);font-size:13.5px}
+header p a{color:var(--accent);text-decoration:none}
+nav{display:flex;flex-wrap:wrap;gap:6px;margin:14px 0 4px}
+nav a{font-size:12.5px;color:var(--accent);background:var(--accent-soft);border-radius:6px;
+  padding:3px 9px;text-decoration:none;white-space:nowrap}
+#filters{background:var(--card);border:1px solid var(--line);border-radius:12px;
+  padding:12px 14px;margin:14px 0;position:sticky;top:8px;z-index:5;
+  box-shadow:0 2px 10px rgba(0,0,0,.04)}
+.row{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center}
+.row+.row{margin-top:8px}
+label.f{font-size:13px;color:var(--muted);display:flex;align-items:center;gap:4px}
+select,input[type=search],input[type=text]{font:inherit;font-size:13.5px;color:var(--ink);
+  background:#fff;border:1px solid var(--line);border-radius:8px;padding:5px 8px}
+input[type=search]{flex:1;min-width:180px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font-size:13px;border:1px solid var(--line);border-radius:999px;padding:2px 11px;
+  cursor:pointer;user-select:none;background:#fff;color:var(--muted)}
+.chip.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.chip.v-✅.on{background:var(--ok);border-color:var(--ok)}
+.chip.v-🟡.on{background:var(--part);border-color:var(--part)}
+.chip.v-❌.on{background:var(--bad);border-color:var(--bad)}
+.chip.v-🔀.on{background:var(--sym);border-color:var(--sym)}
+#count{font-size:13px;color:var(--muted);margin:10px 2px}
+.rec{background:var(--card);border:1px solid var(--line);border-radius:12px;
+  padding:12px 14px;margin:10px 0}
+.rec .head{display:flex;flex-wrap:wrap;gap:6px 8px;align-items:baseline}
+.badge{font-size:12.5px;font-weight:600;border-radius:6px;padding:1px 8px;color:#fff}
+.b-✅{background:var(--ok)} .b-🟡{background:var(--part)} .b-❌{background:var(--bad)} .b-🔀{background:var(--sym)}
+.rec .no{font-size:12.5px;color:var(--muted)}
+.rec h3{font-size:15.5px;margin:0;font-weight:600;display:inline}
+.rec .grade{font-size:11.5px;border:1px solid var(--line);border-radius:5px;padding:0 6px;color:var(--muted)}
+.rec .meta{font-size:13px;color:var(--muted);margin:6px 0 0;word-break:break-all}
+.rec .books{margin:6px 0 0;font-size:13.5px}
+.rec .books b{color:var(--accent);font-weight:600}
+.rec .corro{font-size:12.5px;color:var(--muted);background:var(--accent-soft);
+  border-radius:8px;padding:6px 9px;margin:8px 0 0;word-break:break-all}
+.rec .corro a{color:var(--accent)}
+.rec details{margin-top:7px}
+.rec summary{font-size:12.5px;color:var(--accent);cursor:pointer}
+.rec details div{font-size:13px;color:#333;margin-top:4px;padding-left:2px;
+  border-left:2px solid var(--line);padding-left:8px}
+.rec .gh{font-size:12px;color:var(--muted);margin-left:auto;text-decoration:none;white-space:nowrap}
+.rec .gh:hover{color:var(--accent)}
+footer{margin-top:28px;font-size:12.5px;color:var(--muted);line-height:1.7}
+footer a{color:var(--accent);text-decoration:none}
+@media (max-width:600px){
+  header h1{font-size:18.5px}
+  #filters{position:static}
+  .row{gap:6px 10px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1><a href="./">人生指南 × 拆书框架 × 科学核验</a></h1>
+  <p>《<a href="https://github.com/eternity4719/HowToLiveBetter">高性价比人生指南</a>》667 条建议 × 166 本拆书框架 × 48 份论文级核验，逐条对照。
+  方法与统计见 <a href="https://github.com/sadadsg/how-to-live-better-x-166-books">仓库 README</a> 与 <a href="stats.html">stats</a>。</p>
+  <nav id="secnav"></nav>
+</header>
+
+<div id="filters">
+  <div class="row">
+    <input type="search" id="q" placeholder="搜索条目 / 框架 / 书名 / 论文……">
+    <select id="sec"><option value="">全部节</option></select>
+  </div>
+  <div class="row">
+    <span class="f">判定</span>
+    <span class="chips" id="vchips">
+      <span class="chip v-✅ on" data-v="✅">✅ 一致</span>
+      <span class="chip v-🟡 on" data-v="🟡">🟡 部分</span>
+      <span class="chip v-❌ on" data-v="❌">❌ 冲突</span>
+      <span class="chip v-🔀 on" data-v="🔀">互补</span>
+    </span>
+    <span class="f">指南证据</span>
+    <span class="chips" id="gchips">
+      <span class="chip on" data-g="A">A</span>
+      <span class="chip on" data-g="B">B</span>
+      <span class="chip on" data-g="C">C</span>
+      <span class="chip on" data-g="">未知</span>
+    </span>
+    <label class="f"><input type="checkbox" id="lit" checked> 仅看有论文佐证</label>
+  </div>
+  <div class="row">
+    <label class="f">对应书
+      <select id="book"><option value="">全部</option></select>
+    </label>
+    <span id="count"></span>
+  </div>
+</div>
+
+<div id="results"></div>
+
+<footer>
+  数据由 <a href="https://github.com/sadadsg/how-to-live-better-x-166-books/blob/main/tools/build_mappings.py">build_mappings.py</a>
+  从 guide/ 的 34 份节级对照文档生成并内嵌于本页（双击本文件离线可用，全文链接指向 GitHub）。
+  本项目为独立第三方对照笔记，CC BY 4.0，引用请署名。
+</footer>
+</div>
+
+<script>
+const DATA = /*__MAPPINGS__*/null;
+if (!DATA) { document.getElementById('results').innerHTML =
+  '<p style="color:#c0392b">数据未内嵌：请运行 tools/build_mappings.py 生成。</p>'; }
+else {
+const $ = s => document.querySelector(s);
+const recs = DATA.records;
+const allBooks = [...new Set(recs.flatMap(r => r.books))].sort((a,b)=>a.localeCompare(b,'zh'));
+
+// 侧栏节导航
+$('#secnav').innerHTML = DATA.sections.map(s =>
+  `<a href="guide/${String(s.no).padStart(2,'0')}-${s.name}.html" title="${s.records} 条记录">${String(s.no).padStart(2,'0')} ${s.name}</a>`).join('');
+
+// 筛选控件
+$('#sec').innerHTML += DATA.sections.map(s =>
+  `<option value="${s.no}">${String(s.no).padStart(2,'0')} ${s.name}（${s.records}）</option>`).join('');
+$('#book').innerHTML += allBooks.map(b => `<option>${b}</option>`).join('');
+
+const state = {q:'', sec:'', verdicts:new Set(['✅','🟡','❌','🔀']),
+  grades:new Set(['A','B','C','']), litOnly:false, book:''};
+
+function esc(s){return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+
+function render(){
+  const q = state.q.trim().toLowerCase();
+  const out = recs.filter(r =>
+    (!state.sec || r.section === +state.sec) &&
+    state.verdicts.has(r.verdict) &&
+    state.grades.has(r.entry_grade || '') &&
+    (!state.litOnly || r.paper_urls.length || r.has_literature) &&
+    (!state.book || r.books.includes(state.book)) &&
+    (!q || [r.record_title, r.entry_title, r.books.join(' '), r.corroboration,
+            r.points.join(' ')].join(' ').toLowerCase().includes(q))
+  );
+  $('#count').textContent = `${out.length} / ${recs.length} 条记录`;
+  $('#results').innerHTML = out.map(r => {
+    const sec = String(r.section).padStart(2,'0');
+    const gh = r.github ? `<a class="gh" href="${esc(r.github)}">指南原文 ↗</a>` : '';
+    const books = r.books.length
+      ? `<p class="books">↔ ${r.books.map(b=>`<b>《${esc(b)}》</b>`).join(' ')}</p>` : '';
+    const corro = r.corroboration
+      ? `<p class="corro">🔬 ${esc(r.corroboration)}</p>`
+      : (r.has_literature ? '' : '');
+    const pts = r.points.length
+      ? `<details><summary>一致点 / 差异边界 / 补充</summary><div>${r.points.map(p=>esc(p)).join('<br>')}</div></details>` : '';
+    return `<div class="rec">
+      <div class="head"><span class="badge b-${r.verdict}">${r.verdict}</span>
+        <span class="no">${esc(r.entry)}</span><h3>${esc(r.record_title)}</h3>
+        <span class="grade">指南证据 ${r.entry_grade||'—'}</span>${gh}</div>
+      ${books}${corro}${pts}
+    </div>`;
+  }).join('');
+}
+
+$('#q').addEventListener('input', e=>{state.q=e.target.value; render();});
+$('#sec').addEventListener('change', e=>{state.sec=e.target.value; render();});
+$('#book').addEventListener('change', e=>{state.book=e.target.value; render();});
+$('#lit').addEventListener('change', e=>{state.litOnly=e.target.checked; render();});
+document.querySelectorAll('#vchips .chip').forEach(c=>c.addEventListener('click',()=>{
+  const v=c.dataset.v; c.classList.toggle('on');
+  c.classList.contains('on') ? state.verdicts.add(v) : state.verdicts.delete(v); render();
+}));
+document.querySelectorAll('#gchips .chip').forEach(c=>c.addEventListener('click',()=>{
+  const g=c.dataset.g; c.classList.toggle('on');
+  c.classList.contains('on') ? state.grades.add(g) : state.grades.delete(g); render();
+}));
+
+render();
+}
+</script>
+</body>
+</html>

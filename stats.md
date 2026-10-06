@@ -63,5 +63,8 @@
 python3 tools/parse_vault_frameworks.py     # 166 篇拆书笔记 → data/vault-frameworks.yaml
 python3 tools/merge_research_verdicts.py    # data/fragments/*.yaml → data/research-verdicts.yaml
 python3 tools/extract_candidates.py --num 03 --keys "睡眠,咖啡因,…"   # 按节抽候选
+python3 tools/build_mappings.py             # guide/*.md → data/mappings.yaml/json + 内嵌数据的 index.html（含 258 条基线校验）
 python3 tools/verify_guides.py              # 引用真实性 + 佐证文献段强制检查 + 四档统计
 ```
+
+`data/mappings.yaml|json` 是 guide/ 的**结构化投影**（258 条记录的节号/条目/档位/证据等级/书目/佐证/论文 URL），在线检索页读的就是它；改动请改 guide 原文后重跑 build_mappings.py，基线校验会拦住任何数量或引用异常。
