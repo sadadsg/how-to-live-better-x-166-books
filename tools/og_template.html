@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1280px;height:640px;overflow:hidden;background:#0d2818;
+  font-family:-apple-system,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;color:#fff}
+.stage{position:relative;width:1280px;height:640px;padding:52px 64px;
+  display:flex;flex-direction:column;
+  background:radial-gradient(1100px 700px at 88% 46%, rgba(212,169,80,.20), transparent 55%),
+             radial-gradient(900px 560px at 8% -10%, rgba(46,163,111,.25), transparent 60%),
+             linear-gradient(135deg,#0d2818 0%,#123a26 55%,#18794e 130%)}
+/* 三源汇聚：金色光束（呼应三源模型），全部避开左侧文字区 */
+.beam{position:absolute;height:2px;border-radius:2px;transform-origin:left center;
+  background:linear-gradient(90deg,transparent,rgba(212,169,80,.75))}
+.b1{width:437px;top:130px;left:850px;transform:rotate(25.5deg)}
+.b2{width:244px;top:318px;left:1000px}
+.b3{width:437px;top:506px;left:850px;transform:rotate(-25.5deg)}
+.point{position:absolute;top:318px;left:1244px;width:14px;height:14px;border-radius:50%;
+  background:#f2d489;box-shadow:0 0 34px 10px rgba(212,169,80,.55);transform:translate(-50%,-50%)}
+.ring{position:absolute;top:318px;left:1244px;width:120px;height:120px;border-radius:50%;
+  border:1px solid rgba(212,169,80,.35);transform:translate(-50%,-50%)}
+.grain{position:absolute;inset:0;opacity:.05;pointer-events:none}
+.kicker{display:flex;gap:10px;align-items:center;font-size:17px;letter-spacing:.14em;color:rgba(255,255,255,.62)}
+.kicker .dot{width:8px;height:8px;border-radius:50%;background:#d4a950}
+h1{margin-top:34px;font-size:56px;line-height:1.18;font-weight:700}
+h1 .x{color:#d4a950;font-weight:600;padding:0 6px}
+.sub{margin-top:14px;font-size:25px;color:rgba(255,255,255,.72)}
+.numbers{margin-top:44px;display:flex;align-items:baseline;gap:16px;font-weight:700}
+.numbers .n{font-size:104px;line-height:1;color:#f2d489;font-variant-numeric:tabular-nums;
+  text-shadow:0 0 28px rgba(212,169,80,.35)}
+.numbers .u{font-size:26px;font-weight:500;color:rgba(255,255,255,.85)}
+.numbers .x{font-size:44px;color:rgba(212,169,80,.8);align-self:center;padding:0 2px}
+.pills{margin-top:38px;display:flex;gap:14px}
+.pill{display:flex;align-items:center;gap:10px;background:rgba(255,255,255,.07);
+  border:1px solid rgba(255,255,255,.14);border-radius:999px;padding:10px 22px;font-size:21px}
+.pill .d{width:12px;height:12px;border-radius:50%}
+.pill b{font-size:25px;font-variant-numeric:tabular-nums}
+.foot{margin-top:auto;display:flex;justify-content:space-between;font-size:19px;color:rgba(255,255,255,.55)}
+</style>
+</head>
+<body>
+<div class="stage">
+  <div class="beam b1"></div><div class="beam b2"></div><div class="beam b3"></div>
+  <div class="ring"></div><div class="point"></div>
+  <svg class="grain" width="1280" height="640">
+    <filter id="n"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2"/>
+    <feColorMatrix type="saturate" values="0"/></filter>
+    <rect width="100%" height="100%" filter="url(#n)"/>
+  </svg>
+  <div class="kicker"><span class="dot"></span>独立第三方对照 · 全量 34 节 · CC BY 4.0</div>
+  <h1>人生指南<span class="x">×</span>拆书框架<span class="x">×</span>科学核验</h1>
+  <div class="sub">《高性价比人生指南》三源逐条对照集</div>
+  <div class="numbers">
+    <span class="n">667</span><span class="u">条建议</span><span class="x">×</span>
+    <span class="n">166</span><span class="u">本书</span><span class="x">×</span>
+    <span class="n">633</span><span class="u">条论文核验</span>
+  </div>
+  <div class="pills">
+    <span class="pill"><span class="d" style="background:#3ddc91"></span>一致 <b>123</b></span>
+    <span class="pill"><span class="d" style="background:#e6c94f"></span>部分一致 <b>54</b></span>
+    <span class="pill"><span class="d" style="background:#ef6a5a"></span>冲突 <b>2</b></span>
+    <span class="pill"><span class="d" style="background:#7db3dd"></span>互补 <b>79</b></span>
+  </div>
+  <div class="foot">
+    <span>sadadsg.github.io/how-to-live-better-x-166-books</span>
+    <span>667 条全过检 · 258 条对照记录</span>
+  </div>
+</div>
+</body>
+</html>
